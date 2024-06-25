@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRUEBA</title>
+    <link rel="stylesheet" href="assets/css/StylePorductosDetal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container-hero position: fixed;">
+        <div class="container hero">
+          <div class="customer-support">
+            <i class=""></i>
+            <div class="content-customer-support">
+              <span class="text"></span>
+              <span class="number"></span>
+            </div>
+          </div>
+          <div class="container-logo">
+            <i
+              ><img
+                src="assets/img/logo.png"
+                alt="100px"
+                style="width: 60px; width: 50px; height: 50px"
+            /></i>
+            <h1 class="logo"><a href="index.html">TRANSFORMETAL</a></h1>
+          </div>
+          <div class="container-user">
+            <i class=""></i>
+            <i class=""></i>
+            <div class="">
+              <span class="text"></span>
+              <span class="number"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-navbar">
+        <nav class="navbar container">
+          <input type="checkbox" id="check" />
+          <ul class="menu">
+            <li id="nav2">
+              <a href="#" id="productos-link">Productos</a>
+              <ul class="nav-menu" id="productos-submenu">
+                <li>
+                  <a href="#" class="main-category"
+                    >Telecomunicaciones e IT<i
+                      style="right: -61px"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu">
+                    <li>
+                      <a href="#section1" onclick="showSection('section1')"
+                        >Gabinetes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section2" onclick="showSection('section2')"
+                        >Racks</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section3" onclick="showSection('section3')"
+                        >Bandejas</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section4" onclick="showSection('section4')"
+                        >Riel</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#section5" onclick="showSection('section5')"
+                        >Escalerilla</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main-category"
+                    >Planta Externa y Electricidad<i
+                      style="right: -35px"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu" style="top: -40px">
+                    <li><a href="#">Gabinetes</a></li>
+                    <li><a href="#">Cajas</a></li>
+                    <li><a href="#">Herrajes</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main-category"
+                    >Exhibición y Almacenes<i
+                      style="right: -65px"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu" style="top: -80px">
+                    <li><a href="#">Góndolas </a></li>
+                    <li><a href="#">Estanterías </a></li>
+                    <li><a href="#">Racks Industrial</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main-category"
+                    >Arquitectónicos y Panales Decorativos<i
+                      style="right: -188%"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu" style="top: -119px">
+                    <li><a href="#">Paneles decorativos</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main-category"
+                    >Mobiliario Urbano<i
+                      style="right: -94%"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu" style="margin-top: -177px">
+                    <li><a href="#">Basureros</a></li>
+                    <li><a href="#">Racks</a></li>
+                    <li><a href="#">Bancas</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main-category"
+                    >Miscelánea<i
+                      style="right: -143px"
+                      class="fa-sharp fa-solid fa-arrow-right"
+                    ></i
+                  ></a>
+                  <ul class="nav-submenu" style="margin-top: -217px">
+                    <li><a href="#">Relojes</a></li>
+                    <li><a href="#">Antenas</a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li id="nav2">
+              <a href="#" id="industrias-link">Industrias</a>
+              <ul class="nav-menu" id="industrias-submenu">
+                <li><a href="industrias.html#inicio">Industrias</a></li>
+                <li>
+                  <a href="industrias.html#Telecomunicaciones"
+                    >Telecomunicaciones</a
+                  >
+                </li>
+                <li><a href="industrias.html#Electricidad">Electricidad</a></li>
+                <li>
+                  <a href="industrias.html#Automatizacion">Automatización</a>
+                </li>
+                <li><a href="industrias.html#Urbanismo">Urbanismo</a></li>
+                <li><a href="industrias.html#Banca">Banca</a></li>
+                <li>
+                  <a href="industrias.html#Desarrollo"
+                    >Desarrollo Inmobiliario</a
+                  >
+                </li>
+                <li>
+                  <a href="industrias.html#inicio">Almacenamiento Industrial</a>
+                </li>
+                <li><a href="industrias.html#Comercios">Comercios</a></li>
+              </ul>
+            </li>
+            <li id="nav2">
+              <a href="#" id="servicios-link">Servicios</a>
+              <ul class="nav-menu" id="servicios-submenu">
+                <li><a href="#">Diseños personalizados</a></li>
+                <li><a href="#">Corte</a></li>
+                <li><a href="#">Dobles</a></li>
+                <li><a href="#">Instalación</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" id="nosotros-link">Nosotros</a>
+              <ul class="nav-menu" id="nosotros-submenu">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li>
+                  <a href="nosotros.html#staff"
+                    >Equipo de gestión administrativa y comercial</a
+                  >
+                </li>
+                <li><a href="#">Planta de Transformetal</a></li>
+                <li><a href="#">Política de calidad</a></li>
+                <li><a href="#">Responsabilidad Social Empresarial</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </ul>
+          <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search" href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <i
+            class="fas fa-shopping-cart"
+            style="color: #fff; font-size: 25px"
+          ></i>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </nav>
+      </div>
+    </header>
+    <section id="Telecomunicaciones">
+      <div class="gabi">
+
+      
+      <!---GABINETE OUTDOOR DE PARED-0.76m InIcio-->
+      <section id="product1" class="product">
+        <!--NEMA1 Inicio-->
+        <section id="productos-nema1">
+          <main id="productos-nema1" class="section">
+            <a
+              href="productos.html#section6"
+              style="margin-left: 300px; font-size: 25px"
+              ><i class="fa-solid fa-xmark"></i
+                onclick="cerrarYRedirigir()"></a>
+            <section class="product-section">
+              <div class="product-carousel">
+                <div>
+                  <img
+                    src="assets/img/product/nema1-1.png"
+                    alt="Product Image 1"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema1-2.png"
+                    alt="Product Image 2"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema1-3.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema1-4.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+              </div>
+              <div class="product-details">
+                <h2>
+                  Gabinete outdoor  de pared -0.76m <br> Modelo: GBO-PD-VV-0.76-21-01-RM
+                </h2>
+                <p>
+                  Este gabinete de acero para exteriores está diseñado para proteger equipos 
+                  electrónicos en ambientes difíciles. Con sistema de enfriamiento por ventilación y filtro,
+                   iluminación LED, y seguro con doble cerradura, es ideal para 
+                  instalaciones robustas al aire libre. Resistente y funcional, garantiza la seguridad y 
+                  durabilidad de sus equipos en cualquier entorno.
+                </p>
+              
+                <div class="ficha">
+                  <a href="#">Ficha Técnica</a>
+                </div>
+              </div>
+            </section>
+            <section class="additional-info">
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Detalles</th>
+                  </tr>
+                  <tr>
+                    <td>Sistema de Enfriamiento:</td>
+                    <td>Reduce la temperatura en 4°C con ventiladores.</td>
+                  </tr>
+                  <tr>
+                    <td>Acabado Exterior:</td>
+                    <td>Resistente con pintura de poliéster electrostática.</td>
+                  </tr>
+                  <tr>
+                    <td>Seguridad:</td>
+                    <td>Cerraduras tipo locker para mayor seguridad.</td>
+                  </tr>
+                  <tr>
+                    <td>Montaje y Manejo:</td>
+                    <td>Incluye orejas para montaje fácil y seguro.</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación y Energía:</td>
+                    <td>Iluminación LED frontal ajustable en voltaje.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Especificaciones Generales</th>
+                  </tr>
+                  <tr>
+                    <td>Material de Construcción:</td>
+                    <td>Lamina rolada en frío #18</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo de Enfriamiento:</td>
+                    <td>Ventilación con filtro + 4 Ventiladores 12X12 cm</td>
+                  </tr>
+                  <tr>
+                    <td>Voltaje ajustable:</td>
+                    <td>120-240 VAC.</td>
+                  </tr>
+                  <tr>
+                    <td>Dimensiones:</td>
+                    <td>W 600mm, D 526mm, H 650mm</td>
+                  </tr>
+                  <tr>
+                    <td>Peso:</td>
+                    <td>75 Lbs</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo de Pintura:</td>
+                    <td>Poliéster Electrostática</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación:</td>
+                    <td>LED 5W, 120-240 VAC</td>
+                  </tr>
+                
+                </table>
+              </div>
+              
+            </section>
+          </main>
+        </section>
+        <!--NEMA1 Inicio-->
+      </section>
+       <!---GABINETE OUTDOOR DE PARED-0.76m Fin-->
+       
+      <!---Caja outdoor  con bandejas montaje en poste 22/40/50 InIcio-->
+      <section id="product2" class="product">
+        <!--NEMA1 Inicio-->
+        <section id="productos-nema1">
+          <main id="productos-nema1" class="section">
+            <a
+              href="productos.html#section6"
+              style="margin-left: 300px; font-size: 25px"
+              ><i class="fa-solid fa-xmark"></i
+                onclick="cerrarYRedirigir()"></a>
+            <section class="product-section">
+              <div class="product-carousel">
+                <div>
+                  <img
+                    src="assets/img/product/nema2-1.png"
+                    alt="Product Image 1"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema2-2.png"
+                    alt="Product Image 2"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema2-3.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/nema2-4.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+              </div>
+              <div class="product-details">
+                <h2>
+                  Caja outdoor  con bandejas montaje en poste 22/40/50 <br> Modelo: CJO-BJ-VV-40/22/50/C-21-01-RM
+                </h2>
+                <p>
+                  Nuestro gabinete galvanizado diseñado para proteger equipos de telecomunicaciones en exteriores.
+                   Compacto y ligero, con ventilación y filtro integrados para mantener los equipos en óptimas condiciones.
+                    Este producto incluye cerradura segura y pintura resistente, ideal para montaje en postes. Garantiza 
+                    la protección y durabilidad necesarias para las instalaciones al aire libre.
+                </p>
+              
+                <div class="ficha">
+                  <a href="#">Ficha Técnica</a>
+                </div>
+              </div>
+            </section>
+            <section class="additional-info">
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Detalles</th>
+                  </tr>
+                  <tr>
+                    <td>Uso del Producto:</td>
+                    <td>Para instalación de equipos de Telecom.</td>
+                  </tr>
+                  <tr>
+                    <td>Montaje:</td>
+                    <td>Montaje para Poste.</td>
+                  </tr>
+                  <tr>
+                    <td>Incluye:</td>
+                    <td>2 Bandejas, Opcional: Ventilador de 12X12 cm. 120VAC, Filtro para ventilas.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Especificaciones Generales</th>
+                  </tr>
+                  <tr>
+                    <td>Producto para instalación:</td>
+                    <td>outdoor</td>
+                  </tr>
+                  <tr>
+                    <td>Construcción:</td>
+                    <td>Lamina galvanizada #20</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo de Enfriamiento:</td>
+                    <td>Ventilas con filtro y opcional con ventilador.</td>
+                  </tr>
+                  <tr>
+                    <td>Dimensiones:</td>
+                    <td>W 400mm, D 220mm, H 500mm</td>
+                  </tr>
+                  <tr>
+                    <td>Peso:</td>
+                    <td>25 Lbs</td>
+                  </tr>
+                  <tr>
+                    <td>Bandeja:</td>
+                    <td>Bandeja doble fondo</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación:</td>
+                    <td>LED 5W, 120-240 VAC</td>
+                  </tr>
+                  <tr>
+                    <td>Montaje:</td>
+                    <td>4 Orejas para anclaje a pared</td>
+                  </tr>
+                </table>
+              </div>
+              
+            </section>
+          </main>
+        </section>
+        <!--NEMA1 Inicio-->
+      </section>
+       <!---GABINETE OUTDOOR DE PARED-0.76m Fin-->
+          <!---Caja outdoor  con bandejas montaje en poste 22/40/50 InIcio-->
+      <section id="product6" class="product">
+        <!--NEMA1 Inicio-->
+        <section id="productos-nema1">
+          <main id="productos-nema1" class="section">
+            <a
+              href="productos.html#section7"
+              style="margin-left: 300px; font-size: 25px"
+              ><i class="fa-solid fa-xmark"></i
+                onclick="cerrarYRedirigir()"></a>
+            <section class="product-section">
+              <div class="product-carousel">
+                <div>
+                  <img
+                    src="assets/img/product/gab1-1.png"
+                    alt="Product Image 1"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/gab1-2.png"
+                    alt="Product Image 2"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/gab1-3.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="assets/img/product/gab1-4.png"
+                    alt="Product Image 3"
+                  />
+                </div>
+              </div>
+              <div class="product-details">
+                <h2>
+                  Gabinete outdoor individual con HE  a -48 v DE 1.6m. <br> Modelo: GBO-HE-SB-14-1.6-1-RM
+                </h2>
+                <p>
+                  Gabinete exterior IP 55 para telecomunicaciones. Fabricado en lámina galvanizada, 1.6m
+                   de altura, con rack de 19" y 35 UR. Doble puerta, cerradura de tres puntos, opciones de 
+                   enfriamiento, iluminación LED y sensores de alarma. Fácil manejo de cables y montaje seguro. 
+                   Ideal para condiciones adversas.
+                </p>
+              
+                <div class="ficha">
+                  <a href="#">Ficha Técnica</a>
+                </div>
+              </div>
+            </section>
+            <section class="additional-info">
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Detalles</th>
+                  </tr>
+                  <tr>
+                    <td>Uso del Producto:</td>
+                    <td>Para instalación de equipos de Telecom.</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación:</td>
+                    <td>Lámparas LED frontal y posterior de -48VDC, 5W.</td>
+                  </tr>
+                  <tr>
+                    <td>Tomacorriente:</td>
+                    <td>110 volts frontal y trasero..</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="info-block">
+                <table>
+                  <tr>
+                    <th colspan="2">Especificaciones Generales</th>
+                  </tr>
+                  <tr>
+                    <td>Producto para instalación:</td>
+                    <td>outdoor</td>
+                  </tr>
+                  <tr>
+                    <td>Construcción:</td>
+                    <td>Lamina galvanizada #20</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo de Enfriamiento:</td>
+                    <td>Ventilas con filtro y opcional con ventilador.</td>
+                  </tr>
+                  <tr>
+                    <td>Dimensiones:</td>
+                    <td>W 400mm, D 220mm, H 500mm</td>
+                  </tr>
+                  <tr>
+                    <td>Peso:</td>
+                    <td>25 Lbs</td>
+                  </tr>
+                  <tr>
+                    <td>Bandeja:</td>
+                    <td>Bandeja doble fondo</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación:</td>
+                    <td>LED 5W, 120-240 VAC</td>
+                  </tr>
+                  <tr>
+                    <td>Montaje:</td>
+                    <td>4 Orejas para anclaje a pared</td>
+                  </tr>
+                </table>
+              </div>
+              
+            </section>
+          </main>
+        </section>
+        <!--NEMA1 Inicio-->
+      </section>
+       <!---GABINETE OUTDOOR DE PARED-0.76m Fin-->
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $(".product-carousel").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
+
+      /*secciones */
+      function showProduct(productId) {
+        var products = document.getElementsByClassName("product");
+        for (var i = 0; i < products.length; i++) {
+          products[i].style.display = "none";
+        }
+        var productToShow = document.getElementById(productId);
+        if (productToShow) {
+          productToShow.style.display = "block";
+        }
+      }
+
+      function checkHash() {
+        var hash = window.location.hash;
+        if (hash) {
+          showProduct(hash.substring(1));
+        } else {
+          showProduct("product1");
+        }
+      }
+
+      window.onhashchange = function () {
+        checkHash();
+      };
+
+      // Inicializa la visualización del producto correcto cuando la página carga
+      window.onload = function () {
+        checkHash();
+      };
+
+      /*Cerrar parA GABINETES*/
+      function cerrarYRedirigir() {
+    // Código para cerrar la ventana modal (o cualquier otro elemento)
+    document.getElementById('miVentana').style.display = 'none';
+
+    // Redirigir a otra página
+    window.location.href = 'productos.html#section6';
+  }
+    </script>
+  </body>
+</html>
