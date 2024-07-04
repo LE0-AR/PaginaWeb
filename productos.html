@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSFORMETAL</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styleProducts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+</head>
+<body onload="checkHash()">
+    <header id="header">
+        <div class="container-hero position: fixed;">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class=""></i>
+                    <div class="content-customer-support">
+                        <span class="text"></span>
+                        <span class="number"></span>
+                    </div>
+                </div>
+                <div class="container-logo">
+                    <i><img src="assets/img/logo.png" alt="100px" style="width: 60px; width: 50px; height: 50px" /></i>
+                    <h1 class="logo"><a href="index.html">TRANSFORMETAL</a></h1>
+                </div>
+                <div class="container-user">
+                    <i class=""></i>
+                    <i class=""></i>
+                    <div class="">
+                        <span class="text"></span>
+                        <span class="number"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <input type="checkbox" id="check" />
+                <ul class="menu">
+                    <li id="nav2">
+                        <a href="#" id="productos-link">Productos</a>
+                        <ul class="nav-menu" id="productos-submenu">
+                            <li>
+                                <a href="#" class="main-category">Telecomunicaciones e IT<i style="right: -61px" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu">
+                                    <li><a href="#section1" onclick="showSection('section1')">Gabinetes</a></li>
+                                    <li><a href="#section2" onclick="showSection('section2')">Racks</a></li>
+                                    <li><a href="#section3" onclick="showSection('section3')">Bandejas</a></li>
+                                    <li><a href="#section4" onclick="showSection('section4')">Riel</a></li>
+                                    <li><a href="#section5" onclick="showSection('section5')">Escalerilla</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-category">Planta Externa y Electricidad<i style="right: -35px" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu" style="top: -40px">
+                                    <li><a href="#">Gabinetes</a></li>
+                                    <li><a href="#">Cajas</a></li>
+                                    <li><a href="#">Herrajes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-category">Exhibición y Almacenes<i style="right: -65px" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu" style="top: -80px">
+                                    <li><a href="#">Góndolas </a></li>
+                                    <li><a href="#">Estanterías </a></li>
+                                    <li><a href="#">Racks Industrial</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-category">Arquitectónicos y Panales Decorativos<i style="right: -188%" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu" style="top: -119px">
+                                    <li><a href="#">Paneles decorativos</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-category">Mobiliario Urbano<i style="right: -94%" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu" style="margin-top: -177px">
+                                    <li><a href="#">Basureros</a></li>
+                                    <li><a href="#">Racks</a></li>
+                                    <li><a href="#">Bancas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="main-category">Miscelánea<i style="right: -143px" class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                                <ul class="nav-submenu" style="margin-top: -217px">
+                                    <li><a href="#">Relojes</a></li>
+                                    <li><a href="#">Antenas</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="nav2">
+                        <a href="#" id="industrias-link">Industrias</a>
+                        <ul class="nav-menu" id="industrias-submenu">
+                            <li><a href="industrias.html#inicio">Industrias</a></li>
+                            <li><a href="industrias.html#Telecomunicaciones">Telecomunicaciones</a></li>
+                            <li><a href="industrias.html#Electricidad">Electricidad</a></li>
+                            <li><a href="industrias.html#Automatizacion">Automatización</a></li>
+                            <li><a href="industrias.html#Urbanismo">Urbanismo</a></li>
+                            <li><a href="industrias.html#Banca">Banca</a></li>
+                            <li><a href="industrias.html#Desarrollo">Desarrollo Inmobiliario</a></li>
+                            <li><a href="industrias.html#inicio">Almacenamiento Industrial</a></li>
+                            <li><a href="industrias.html#Comercios">Comercios</a></li>
+                        </ul>
+                    </li>
+                    <li id="nav2">
+                        <a href="#" id="servicios-link">Servicios</a>
+                        <ul class="nav-menu" id="servicios-submenu">
+                            <li><a href="#">Diseños personalizados</a></li>
+                            <li><a href="#">Corte</a></li>
+                            <li><a href="#">Dobles</a></li>
+                            <li><a href="#">Instalación</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="nosotros-link">Nosotros</a>
+                        <ul class="nav-menu" id="nosotros-submenu">
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="nosotros.html#staff">Equipo de gestión administrativa y comercial</a></li>
+                            <li><a href="#">Planta de Transformetal</a></li>
+                            <li><a href="#">Política de calidad</a></li>
+                            <li><a href="#">Responsabilidad Social Empresarial</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </ul>
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <i class="fas fa-shopping-cart" style="color: #fff; font-size: 25px"></i>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </nav>
+        </div>
+    </header>
+
+<section id="Telecomunicaciones">
+<!--Secciones principales de productos -->
+    <!--Inicio de secction NEMA-->
+    <section id="section1" class="section" style="display: none;">
+      <section id="racks">
+        <div class="area">
+            <div class="profile">
+                <div class="profile-info">
+                    <h2>GABINETE</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Qui debitis praesentium iure quisquam distinctio autem beatae quibusdam nihil veniam, sunt illo,
+                          quia omnis error quae neque, nemo quidem commodi rem!. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Conetdio menu-->
+        <div class="main-container">
+            <div class="categories">
+                <h2>Categorias</h2>
+                <div class="category-list">
+                  <ul>
+                    <li><a href="#section6" onclick="showSection('section6')">NEMA</a></li>
+                    <li><a href="#section7" onclick="showSection('section7')">DATA CENTER</a></li>
+                  </ul>
+                </div>
+            </div>
+            <!--Fin COntenido-->
+            <div class="contenido">
+              <div class="product-list" style="max-width: 950px">
+                <h2 style="padding: 5px; margin: auto">Productos </h2>
+                <!--NEma1-->
+                <div class="product-item">
+                  <img src="assets/img/product/gabinete/nema1-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" href="DetalleProduct.html#product1"  />
+                  <div>
+                    <a class="product-title">
+                      <h3 style="font-size: 15px" href="DetalleProduct.html#product1" >CAJA NEMA OUTDOOR DE PARED-0.76m</h3>
+                    </a>
+                    <p>GBO-PD-VV-0.76-21-01-RM</p>
+                  </div>
+                  <a href="DetalleProduct.html#product1" class="btnInfo">Mostrar Detalles</a>
+  
+                </div>
+                <!--Nema2-->
+                <div class="product-item">
+                  <img src="assets/img/product/gabinete/nema2-1.png" alt="Antena Yagi" style="width: 200px; height: 200px" class="product-image" />
+                  <div>
+                    <a class="product-title">
+                      <h3 style="font-size: 15px">CAJA OUTDOOR  CON BANDEJAS MONTAJE EN POSTE 22/40/50</h3>
+                    </a>
+                    <p>CJO-BJ-VV-40/22/50/C-21-01-RM</p>
+                  </div>
+                  <a href="DetalleProduct.html#product2" class="btnInfo">Mostrar Detalles</a>
+                </div>
+                 
+                <!--Nema3-->
+                <div class="product-item">
+                  <img src="assets/img/product/gabinete/nema3-1.png" alt="nema3 Con parrillas" style="width: 200px; height: 200px" class="product-image" />
+                  <div>
+                    <a class="product-title">
+                      <h3 style="font-size: 15px">CAJA OUTDOOR  CON PARRILLAS,   MONTAJE EN POSTE 22/40/50 cms</h3>
+                    </a>
+                    <p>CJO-PR-VV-40/22/50/C-21-01-RM</p>
+                  </div>
+                  <a href="DetalleProduct.html#product3" class="btnInfo">Mostrar Detalles</a>
+                </div>
+                  <!--Data1-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab1-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR INDIVIDUAL CON HE
+                    a -48 v DE 1.6m.</h3>
+                </a>
+                <p>GBO-HE-SB-14-1.6-1-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product11" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data1 FIN-->
+            <!--Data2-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab2-2.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR DOBLE CON A/C a -48V DE 1.76 m.</h3>
+                </a>
+                <p>GBO-D-AC-1.76-21-01-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product12" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data2 FIN-->
+            <!--Data3-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab3-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR  5G A/C-1m.</h3>
+                </a>
+                <p>GBO-5G-AC-1.0-21-01-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product13" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data3 FIN-->
+          
+              </div>
+            </div>
+            
+        </div>
+    </section>
+      </section>
+  <!--FIn de secction NEMA-->
+  <!--FIn de secction gabinete-->
+  <section id="section2" class="section">
+          
+    <!--Inicio de secction gabinete-->
+    <section id="gabinete">
+      <div class="area">
+        <div class="profile">
+          <div class="profile-info" >
+            <h2>Racks</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ex,
+              perferendis numquam, provident facilis nemo corrupti unde itaque,
+              asperiores maiores et dignissimos sed tenetur nisi rem voluptate
+              vitae. Sint, aut?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Conetdio menu-->
+      <div class="main-container">
+    <div class="categories">
+      <h2>Categorias</h2>
+      <div class="category-list">
+        <ul>
+          <li><a href="#section6" onclick="showProducts('section6')">NEMA 1</a></li>
+          <li><a href="#products-nema2" onclick="showProducts('products-nema2')">NEMA 2</a></li>
+          <li><a href="#products-nema3" onclick="showProducts('products-nema3')">NEMA 3</a></li>
+        </ul>
+      </div>
+    </div>
+   
+
+    <!-- inicio Contenido -->
+      <div class="contenido">
+        <div class="product-list" style="max-width: 950px">
+          <h2 style="padding: 5px; margin: auto">Productos</h2>
+          <!--Inicio gba1-->
+          <div class="product-item">
+            <img
+              src="assets/img/gabinete/gabineteI 1.png"
+              alt="Antena Yagi"
+              style="max-width: 200px; max-height: 200px"
+            />
+            <div>
+              <a  onclick="showDetails('product1-details')">
+                <h3 style="font-size: 15px">
+                  07-CAJA OUTDOOR CON PARRILLAS, MONTAJE EN POSTE 22/40/50 cms
+                </h3>
+              </a>
+              <p>CJO-PR-VV-40/22/50/C-21-01-RM</p>
+            </div>
+            <center>
+                <a href="#detalle-ProductNema1" class="btnInfo" onclick="showDetails('product1-details')">Mostrar Detalles</a>
+            </center>
+        </div>
+        <!--Info fin -->
+        <!--Inicio gba2-->
+        <div class="product-item">
+          <img
+            src="assets/img/gabinete3.png"
+            alt="Gabinete 2"
+            style="max-width: 200px; max-height: 200px"
+          />
+          <div>
+            <a  onclick="showDetails('product1-details')">
+              <h3 style="font-size: 15px">
+                07-CAJA OUTDOOR CON PARRILLAS, MONTAJE EN POSTE 22/40/50 cms
+              </h3>
+            </a>
+            <p>CJO-PR-VV-40/22/50/C-21-01-RM</p>
+          </div>
+          <center>
+            <a href="#detalle-ProductNema1" class="btnInfo" onclick="showDetails('product1-details')">Mostrar Detalles</a>
+          </center>>
+      </div>
+      <!--Info fin -->
+      </div>
+    </div>
+    
+    </section>
+
+  </section>
+  <!--FIn de secction gabinete-->
+
+    <!--Inicio de secction NEMA-->
+    <section id="section6" class="section" style="display: none;">
+    <section id="racks">
+      <div class="area">
+          <div class="profile">
+              <div class="profile-info">
+                  <h2>NEMA (INDOOR/OUTDOOR)</h2>
+                  <p>
+                      Las cajas  de clasificación NEMA de Transformetal vienen en una variedad
+                      de dimensiones y cuentan con placas traseras que son compatibles universalmente o tienen
+                      adaptaciones específicas para integrarse con puntos de acceso (AP) Wi-Fi y Wi-Fi 6 comúnmente utilizados.
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!--Conetdio menu-->
+      <div class="main-container">
+          <div class="categories">
+              <h2>Categorias</h2>
+              <div class="category-list">
+                <ul>
+                  <li><a href="#section6" onclick="showSection('section6')" style="color: #d14013;">NEMA</a></li>
+                  <li><a href="#section7" onclick="showSection('section7')">DATA CENTER</a></li>
+                </ul>
+              </div>
+          </div>
+          <!--Fin COntenido-->
+          <div class="contenido">
+            <div class="product-list" style="max-width: 950px">
+              <h2 style="padding: 5px; margin: auto">NEMA (OUTDOOR)</h2>
+              <!--NEma1-->
+              <div class="product-item">
+                <img src="assets/img/product/gabinete/nema1-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" href="DetalleProduct.html#product1"  />
+                <div>
+                  <a class="product-title">
+                    <h3 style="font-size: 15px" href="DetalleProduct.html#product1" >CAJA NEMA OUTDOOR DE PARED-0.76m</h3>
+                  </a>
+                  <p>GBO-PD-VV-0.76-21-01-RM</p>
+                </div>
+                <a href="DetalleProduct.html#product1" class="btnInfo">Mostrar Detalles</a>
+
+              </div>
+              <!--Nema2-->
+              <div class="product-item">
+                <img src="assets/img/product/gabinete/nema2-1.png" alt="Antena Yagi" style="width: 200px; height: 200px" class="product-image" />
+                <div>
+                  <a class="product-title">
+                    <h3 style="font-size: 15px">CAJA OUTDOOR  CON BANDEJAS MONTAJE EN POSTE 22/40/50</h3>
+                  </a>
+                  <p>CJO-BJ-VV-40/22/50/C-21-01-RM</p>
+                </div>
+                <a href="DetalleProduct.html#product2" class="btnInfo">Mostrar Detalles</a>
+              </div>
+               
+              <!--Nema3-->
+              <div class="product-item">
+                <img src="assets/img/product/gabinete/nema3-1.png" alt="nema3 Con parrillas" style="width: 200px; height: 200px" class="product-image" />
+                <div>
+                  <a class="product-title">
+                    <h3 style="font-size: 15px">CAJA OUTDOOR  CON PARRILLAS,   MONTAJE EN POSTE 22/40/50 cms</h3>
+                  </a>
+                  <p>CJO-PR-VV-40/22/50/C-21-01-RM</p>
+                </div>
+                <a href="DetalleProduct.html#product3" class="btnInfo">Mostrar Detalles</a>
+              </div>
+               
+            </div>
+          </div>
+          
+      </div>
+  </section>
+    </section>
+<!--FIn de secction NEMA-->
+
+ <!--Inicio de secction NEMA-->
+ <section id="section7" class="section" style="display: none;">
+  <section id="racks">
+    <div class="area">
+        <div class="profile" id="DATE">
+            <div class="profile-info">
+                <h2>DATA CENTER</h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas saepe inventore perspiciatis excepturi, unde alias ullam repellat non minus nostrum quidem iste, iure atque quaerat fugiat labore, aspernatur corrupti?
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Conetdio menu-->
+    <div class="main-container">
+        <div class="categories">
+            <h2>Categorias</h2>
+            <div class="category-list">
+              <ul>
+                <li><a href="#section6" onclick="showSection('section6')">NEMA</a></li>
+                <li><a href="#section7" onclick="showSection('section7')" style="color: #d14013;">DATA CENTER</a></li>
+                
+              </ul>
+            </div>
+        </div>
+        <!--Fin COntenido-->
+        <div class="contenido">
+          <div class="product-list" style="max-width: 950px">
+            <h2 style="padding: 5px; margin: auto">DATA CENTER </h2>
+            <!--Data1-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab1-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR INDIVIDUAL CON HE
+                    a -48 v DE 1.6m.</h3>
+                </a>
+                <p>GBO-HE-SB-14-1.6-1-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product11" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data1 FIN-->
+            <!--Data2-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab2-2.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR DOBLE CON A/C a -48V DE 1.76 m.</h3>
+                </a>
+                <p>GBO-D-AC-1.76-21-01-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product12" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data2 FIN-->
+            <!--Data3-->
+            <div class="product-item">
+              <img src="assets/img/product/gabinete/gab3-1.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+              <div>
+                <a class="product-title">
+                  <h3 style="font-size: 15px">GABINETE OUTDOOR  5G A/C-1m.</h3>
+                </a>
+                <p>GBO-5G-AC-1.0-21-01-RM</p>
+              </div>
+              <a href="DetalleProduct.html#product13" class="btnInfo">Mostrar Detalles</a>
+            </div>
+            <!--Data3 FIN-->
+           <!--Data4-->
+           <div class="product-item">
+            <img src="assets/img/product/gabinete/Gab4-2.png" alt="Antena Yagi" style="max-width: 200px; max-height: 200px" class="product-image" />
+            <div>
+              <a class="product-title">
+                <h3 style="font-size: 15px">GABINETE  ELECTRICO OUTDOOR DOBLE PUERTA.</h3>
+              </a>
+              <p>GBO-5G-AC-1.0-21-01-RM</p>
+            </div>
+            <a href="DetalleProduct.html#product14" class="btnInfo">Mostrar Detalles</a>
+          </div>
+          <!--Data4 FIN-->
+          </div>
+        </div>
+        
+    </div>
+</section>
+  </section>
+<!--FIn de secction NEMA-->
+
+ <!--Inicio de secction racks-->
+ 
+</section>
+      <!--FIn de secction Racks-->
+
+</section>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/menu.js"></script>
+
+<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</body>
+</html>

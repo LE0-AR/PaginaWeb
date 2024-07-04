@@ -1,0 +1,156 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main {
+  margin-top: 200px;
+  padding: 2em;
+}
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.product-carousel {
+  flex: 1;
+  max-width: 40%;
+  left: 200px;
+}
+.product-carousel img {
+  position: relative;
+  left: 300px;
+  width: 250px;
+  height: 250px;
+}
+
+.product-details {
+  text-align: justify;
+  flex: 1;
+  margin-right: 250px;
+  max-width: 30%;
+}
+
+.product-details h2 {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.product-details p {
+  margin-top: 1em;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.ficha {
+  display: flex; /* Usamos flexbox para centrar contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-size: 14px;
+  padding: 10px;
+}
+
+.ficha a {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none; /* Añadido para eliminar el subrayado */
+  display: inline-block; /* Asegura que se comporte como un botón */
+}
+
+.ficha a:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
+
+
+.additional-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 350px;
+}
+
+.info-block {
+  flex: 1;
+  margin-right: 2em;
+  min-width: 200px;
+  line-height: 1rem;
+}
+
+.info-block h3 {
+  color: #e71818;
+  margin-bottom: 0.5em;
+}
+
+.info-block p,
+.info-block a {
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+.info-block a {
+  color: #e74c3c;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.specifications {
+  margin-bottom: 2px;
+}
+
+.specifications h3 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+.details {
+  display: none;
+}
+
+.product-list.hidden {
+  display: none;
+}
+
+.details.active {
+  display: block;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
+}
+table {
+  margin-top: 2px;
+  font-size: 14px;
+  padding: 5px;
+  margin-left:-100px ;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+table th, table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left; /* Alineación a la izquierda */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el contenido que desborda */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos si hay contenido que desborda */
+}
+
+table th {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+/*Animation */
