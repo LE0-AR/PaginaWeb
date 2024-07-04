@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #000000;
+	--background-color: #f9f5f0;
+	--dark-color: #f95609 ;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Ariel', sans-serif;
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+/*Menu 1*/
+
+section{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.contenido{
+    background-color: #fff;
+    height: 75%;
+    width: 80%;
+    margin: 190px 60px 60px 190px; /* Aumenta el margen superior aquí */
+    border: 6px solid #000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.contenido h2{
+	display: flex;
+	font-size: 4rem;
+}
+.contenido p{
+	font-size: 1.5rem;
+	text-align: center;
+	max-width: 800px;
+	line-height: 35px;
+}
+.menu1{
+	background:  linear-gradient(0deg, rgba(249,86,9,1) 0%, rgba(80,34,15,1) 100%);
+	position: fixed;
+	top: 57%;
+	left: 30px;
+	transform: translateY(-50%);
+	padding: 20px;
+	border-radius: 50px;
+}
+.menu1 ul{
+	list-style: none;
+	position: relative;
+}
+.menu1 ul li{  
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.menu1 ul li a{
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+	font-size: 24px
+}
+.menu1 ul li a:hover{
+	color: #898989;
+}
+.indicador{
+	width: 60px;
+	height: 60px;
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	z-index: -1;
+	transition: .3s;
+}
+
+/* cuando detecta que tine la clave active realizo el desplazo del indicador*/
+.menu1 ul li:nth-child(1).active ~ .indicador{
+	transform: translateY(calc(70px * 0));
+}
+.menu1 ul li:nth-child(2).active ~ .indicador{
+	transform: translateY(calc(70px * 1));
+}
+.menu1 ul li:nth-child(3).active ~ .indicador{
+	transform: translateY(calc(70px * 2));
+}
+.menu1 ul li:nth-child(4).active ~ .indicador{
+	transform: translateY(calc(70px * 3));
+}
+.menu1 ul li:nth-child(5).active ~ .indicador{
+	transform: translateY(calc(70px * 4));
+}
+.menu1 ul li:nth-child(6).active ~ .indicador{
+	transform: translateY(calc(70px * 5));
+}
+.menu1 ul li:nth-child(7).active ~ .indicador{
+	transform: translateY(calc(70px * 6));
+}
+.menu1 ul li:nth-child(8).active ~ .indicador{
+	transform: translateY(calc(70px * 7));
+}
